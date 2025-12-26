@@ -3,6 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* C64 Colors */
+  --c64-bg: #3528be;
+  --c64-border: #7c70da;
+  --c64-text: #7c70da;
+
+  /* Apple II Colors */
+  --apple-bg: #000000;
+  --apple-text: #33ff33;
+
+  /* MS-DOS Colors */
+  --dos-bg: #000000;
+  --dos-text: #cccccc;
+
+  /* Amiga Colors */
+  --amiga-bg: #0055aa;
+  --amiga-text: #ffffff;
 }
 
 @theme inline {
@@ -10,6 +27,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  --color-c64-bg: var(--c64-bg);
+  --color-c64-border: var(--c64-border);
+  --color-c64-text: var(--c64-text);
+  --color-apple-bg: var(--apple-bg);
+  --color-apple-text: var(--apple-text);
+  --color-dos-bg: var(--dos-bg);
+  --color-dos-text: var(--dos-text);
+  --color-amiga-bg: var(--amiga-bg);
+  --color-amiga-text: var(--amiga-text);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +49,75 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CRT Effect */
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.27861; }
+  5% { opacity: 0.34769; }
+  10% { opacity: 0.23604; }
+  15% { opacity: 0.90626; }
+  20% { opacity: 0.18128; }
+  25% { opacity: 0.83891; }
+  30% { opacity: 0.65583; }
+  35% { opacity: 0.67807; }
+  40% { opacity: 0.26559; }
+  45% { opacity: 0.84693; }
+  50% { opacity: 0.96019; }
+  55% { opacity: 0.08523; }
+  60% { opacity: 0.71313; }
+  65% { opacity: 0.09044; }
+  70% { opacity: 0.1512; }
+  75% { opacity: 0.50657; }
+  80% { opacity: 0.19414; }
+  85% { opacity: 0.60323; }
+  90% { opacity: 0.88425; }
+  95% { opacity: 0.56071; }
+  100% { opacity: 0.15243; }
+}
+
+.scanline {
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 10%, rgba(0, 0, 0, 0.1) 100%);
+  opacity: 0.1;
+  position: absolute;
+  bottom: 100%;
+  animation: scanline 10s linear infinite;
+}
+
+@keyframes scanline {
+  0% { bottom: 100%; }
+  80% { bottom: 100%; }
+  100% { bottom: 0%; }
 }
