@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${vt323.variable} ${pressStart2P.variable} antialiased min-h-screen overflow-hidden bg-black`}
+        className={`${vt323.variable} ${pressStart2P.variable} antialiased min-h-screen bg-black`}
       >
-        <div className="crt relative min-h-screen w-full overflow-hidden">
+        <div className="crt relative min-h-screen w-full">
           <div className="scanline"></div>
           {children}
         </div>

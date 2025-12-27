@@ -20,7 +20,7 @@ export default function About() {
         <div className="pt-4">C:\&gt;TYPE README.TXT</div>
         
         <div className="bg-[#cccccc] text-black p-4 space-y-4">
-          <h1 className="text-3xl font-bold underline">ABOUT IAN DAOUST</h1>
+          <h1 className="text-3xl font-bold underline">IAN DAOUST: ABOUT ME</h1>
           <p>
             DEVELOPER, ARTIST, AND RETRO-FUTURIST.
           </p>

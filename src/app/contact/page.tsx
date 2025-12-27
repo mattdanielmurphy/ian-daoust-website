@@ -11,7 +11,7 @@ export default function Contact() {
                <div className="w-4 h-0.5 bg-black"></div>
             </div>
           </div>
-          <div className="uppercase font-bold tracking-widest">Workbench 1.3 - Contact</div>
+          <div className="uppercase font-bold tracking-widest">Ian Daoust: Contact Me</div>
           <div className="flex gap-2">
             <div className="w-6 h-4 bg-white border border-black"></div>
           </div>

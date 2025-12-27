@@ -9,7 +9,7 @@ export default function Studios() {
           <div className="flex gap-1">
             <div className="w-4 h-4 border border-black"></div>
           </div>
-          <div className="font-bold uppercase tracking-widest text-sm">Lost Fuzz Studios</div>
+          <div className="font-bold uppercase tracking-widest text-sm">Ian Daoust: Lost Fuzz Studios</div>
           <div className="w-4 h-4"></div>
         </div>
 
@@ -27,7 +27,7 @@ export default function Studios() {
             <div className="w-24 h-24 border-2 border-black mb-4 flex items-center justify-center p-2">
                <div className="w-full h-full bg-black"></div>
             </div>
-            <h1 className="text-3xl font-bold uppercase tracking-tighter italic">Lost Fuzz</h1>
+            <h1 className="text-3xl font-bold uppercase tracking-tighter italic">Ian Daoust: Lost Fuzz</h1>
           </div>
 
           <p className="text-sm leading-relaxed text-center border-t border-b border-black py-4">
