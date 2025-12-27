@@ -50,24 +50,24 @@ export default function Contact() {
       <div className="max-w-3xl mx-auto bg-[#ffffff] border-2 border-black p-1 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
         {/* Amiga Window Frame */}
         <div className="bg-[#aaaaaa] border-b-2 border-black p-2 flex items-center justify-between text-black mb-1">
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-shrink-0">
             <div className="w-6 h-4 bg-white border border-black flex items-center justify-center">
                <div className="w-4 h-0.5 bg-black"></div>
             </div>
           </div>
-          <div className="uppercase font-bold tracking-widest">Ian Daoust: Contact Me</div>
-          <div className="flex gap-2">
+          <div className="uppercase font-bold tracking-widest text-[8px] sm:text-[10px] px-2 truncate">Ian Daoust: Contact Me</div>
+          <div className="flex gap-2 flex-shrink-0">
             <div className="w-6 h-4 bg-white border border-black"></div>
           </div>
         </div>
 
-        <div className="bg-[#0055aa] p-6 sm:p-10 border border-black space-y-6">
-          <div className="flex items-start gap-6">
-            <div className="w-16 h-16 bg-[#ff8800] border-2 border-white flex-shrink-0 flex items-center justify-center text-4xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+        <div className="bg-[#0055aa] p-4 sm:p-10 border border-black space-y-6">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#ff8800] border-2 border-white flex-shrink-0 flex items-center justify-center text-2xl sm:text-4xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               !
             </div>
-            <div className="space-y-2">
-              <h1 className="text-xl sm:text-2xl text-[#ff8800] underline uppercase">COMMUNICATION LINK</h1>
+            <div className="space-y-2 text-center sm:text-left">
+              <h1 className="text-lg sm:text-2xl text-[#ff8800] underline uppercase">COMMUNICATION LINK</h1>
               <p className="leading-relaxed">
                 INITIATING CONNECTION TO IAN DAOUST...
               </p>

@@ -22,15 +22,15 @@ export default function Studios() {
         </div>
 
         {/* Content */}
-        <div className="p-8 space-y-6">
+        <div className="p-4 sm:p-8 space-y-6">
           <div className="flex flex-col items-center mb-8">
-            <div className="w-24 h-24 border-2 border-black mb-4 flex items-center justify-center p-2">
+            <div className="w-16 h-16 sm:w-24 sm:h-24 border-2 border-black mb-4 flex items-center justify-center p-2">
                <div className="w-full h-full bg-black"></div>
             </div>
-            <h1 className="text-3xl font-bold uppercase tracking-tighter italic">Ian Daoust: Lost Fuzz</h1>
+            <h1 className="text-xl sm:text-3xl font-bold uppercase tracking-tighter italic text-center">Ian Daoust: Lost Fuzz</h1>
           </div>
 
-          <p className="text-sm leading-relaxed text-center border-t border-b border-black py-4">
+          <p className="text-xs sm:text-sm leading-relaxed text-center border-t border-b border-black py-4">
             A CREATIVE POWERHOUSE SPECIALIZING IN LO-FI AESTHETICS, 
             DISTORTED AUDIO, AND ANALOG NOSTALGIA.
           </p>
